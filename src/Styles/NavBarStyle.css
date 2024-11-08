@@ -1,398 +1,474 @@
-/* NavBar.css*/
+/* Style global */
 nav {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    background-color: #01151f;
-    align-items: center;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    padding: 0.9rem;
-  }
-  nav h1{
-    color: #fff;
-    margin-left: 40px;
-    font-size: 25px;
-  }
-  nav a {
-    text-decoration: none;
-  }
-  nav span{
-    cursor: pointer;
-    margin-left: 40px;
-    font-size: .85rem;
-    text-transform: uppercase;
-  }
-  nav span:hover{
-    color: #fff;
-    border-bottom: 2px solid #EE9B00;
-    padding-bottom: 5px;
-  }
-  span #HomeLight, #MoviesLight, #TrendingLight, #PricingLight{
-    color: #fff;
-  }
-  span #HomeLight:hover, #MoviesLight:hover, #TrendingLight:hover, #PricingLight:hover{
-    border-bottom: 2px solid #ff206e;
-  }
-  #navBarColor{
-    background-color: #38bdab;
-    transition: .6s;
-  }
-  .nav-options{
-    display: flex;
-    align-items: center;
-  }
-  #heading{
-    color: #ff206e;
-  }
-  #navBarColor span:hover{
-    border-bottom: 2px solid #ff206e;
-    padding-bottom: 5px;
-  }
-  .input-group{
-    display: flex;
-    align-items: center;
-  }
-  #Color-switcher{
-    position: relative;
-    margin-right: 45px;
-    background-color: #413E44;
-    width: 80px;
-    height: 40px;
-    border-radius: 20px;
-  }
-  #Color-switcher-mover{
-    position: absolute;
-    left: 5px;
-    top: 4px;
-    background-color: #fff;
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-    transition: .6s;
-  }
-  #Color-switcher-moved{
-    position: absolute;
-    background-color: #fff;
-    left: 40px;
-    top: 4px;
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-    transition: .6s;
-  }
-  .input-group input{
-    position: relative;
-    width: 323px;
-    height: 4vh;
-    border-radius: 16px;
-    border: none;
-    margin-right: 30px;
-  }
-  .input-group input[type='text']{
-    padding-left: 17px;
-    font-size: 1rem;
-    color: black;
-  }
-  .input-group input::placeholder{
-    color: black;
-  }
-  .input-group input:focus{
-    outline: none;
-  }
-  #search{
-    position: absolute;
-    margin-left: 310px;
-  }
-  .Movies{
-    color: #fff;
-    margin-left: 30px;
-    font-size: 28px;
-    
-  }
-  
-  
-  
-  
-  /*Videos.css*/ 
-  body{
-    overflow-x: hidden;
-  }
-  .movies-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .mainBgColor{
-    background-color:#0c1e25;
-    width: 100%;
-  }
-  .secondaryBgColor{
-    background-color: #fff;
-    width: 100%;
-  }
-  .movies-container img{
-    width: 350px;
-    height: 550px;
-    margin: 25px 0px 4px 15px;
-    border-radius: 18px;
-  }
-  .mainColor{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    font-size: 1rem;
-  }
-  #Nothing{
-    display: none;
-  }
-  .secondaryColor{
-    color: #ff206e;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    font-size: 1rem;
-  }
-  .movies-container h3, .movies-container img{
-    cursor: pointer;
-    transition: .4s;
-  }
-  .movies-container img:hover{
-    transform: scale(1.05);
-  }
-  #container{
-    position: relative;
-  }
-  #hide{
-    display: none;
-  }
-  #smaller-Text{
-    width: 100%;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-  }
-  #playIcon{
-    position: absolute;
-    bottom: 70px;
-    left: 20px;
-    visibility: visible;
-    z-index: 100;
-    cursor: pointer;
-  }
-  #Exit1{
-    position: absolute;
-    margin-left: 475px;
-    margin-top: 67px;
-    z-index: 999;
-  }
-  #Nothing{
-    color: green;
-  }
-  #NoContainer{
-    opacity: 0.35;
-  }
-  .DarkTheme{
-    color:#fff;
-  }
-  .LightThemeClose{
-    color: #ff206e;
-  }
-  
-  
-  
-  /* TrailerMovi.css*/
-  .player{
-    position: fixed; 
-    top: 80px; 
-    width: 800px; 
-    height: 500px; 
-  }
-  .Container{
-    display: none;
-    position:absolute;
-    z-index: 100;
-  }
-  #TrailerMovie-name-dark{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    position: absolute;
-    top: -100px;
-    font-size: 2.5rem;
-    color: #EE9B00;
-  }
-  #TrailerMovie-name-light{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    position: absolute;
-    top: -100px;
-    font-size: 2.5rem;
-    color: #ff206e;
-  }
-  
-  
-  
-  /*pricing.css*/
-  
-  
-  .backgroun-Color-Main{
-    width: 100vw;
-    height: 91vh;
-    background-color: #0c1e25;
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .backgroun-Color-secondary{
-    width: 100vw;
-    height: 91vh;
-    background-color: #fff;
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .Pricing-container{
-    display: flex;
-    color: #fff;
-  }
-  .Pricing-option1, .Pricing-option2, .Pricing-option3{
-    width: 30vw;
-    height: 63vh;
-    background-color: #000d13;
-    margin-right: 20px;
-    border-radius: 16px;
-  }
-  .light-Theme1, .light-Theme2, .light-Theme3{
-    width: 30vw;
-    height: 63vh;
-    background-color: #29534e;
-    margin-right: 20px;
-    border-radius: 16px;
-  }
-  .Pricing-option1 h3, .Pricing-option2 h3, .Pricing-option3 h3{
-    display: flex;
-    justify-content: center;
-    font-size: 2.3rem;
-    color: #EE9B00;
-  }
-  .Price{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-  .light-Theme1 h3, .light-Theme2 h3, .light-Theme3 h3{
-    font-size: 2.3rem;
-    display: flex;
-    justify-content: center;
-    color: #fff;
-  }
-  .Pricing-option1 h2, .Pricing-option2 h2, .Pricing-option3 h2{
-    font-size: 3rem;
-    margin-bottom: 12px;
-    display: flex;
-    justify-content: center;
-  }
-  .light-Theme1 h2, .light-Theme2 h2, .light-Theme3 h2{
-    color: #ff206e;
-    font-size: 3rem;
-    margin-bottom: 12px;
-    display: flex;
-    justify-content: center;
-  }
-  .Pricing-option1 span, .Pricing-option2 span, .Pricing-option3 span{
-    display: flex;
-    font-size: 1.3rem;
-    margin-left: 80px;
-    margin-bottom: 15px;
-    font-weight: 300px;
-  }
-  #MonthlyYearly{
-    font-size: 1.4rem;
-  }
-  .light-Theme1 span, .light-Theme2 span, .light-Theme3 span{
-    display: flex;
-    font-size: 1.3rem;
-    margin-left: 80px;
-    margin-bottom: 15px;
-    font-weight: 300px;
-    color: #fff;
-  }
-  #checkmark{
-    margin-right: 9px;
-  }
-  button{
-    width: 400px;
-    height: 6vh;
-    margin-left: 80px;
-    border: none;
-    border-radius: 7px;
-    background-color: #659664;
-    color: #fff;
-    font-size: 1.3rem;
-    cursor: pointer;
-  }
-  button:hover{
-    background-color: #588157;
-    transition: .4s;
-  }
-  #button1{
-    margin-top: 98px;
-  }
-  #button2{
-    margin-top: 55px;
-  }
-  #button3{
-    margin-top: 12px;
-  }
-  #darktheme{
-    display: flex;
-    justify-content: flex-end;
-  }
-  .Pricing-yearly-darktheme{
-    position: relative;
-    margin-left: 250px;
-    width: 70px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #413E44;
-    margin-right: 10px;
-  }
-  .Pricing-monthly-darktheme {
-    position: absolute;
-    left: 5px;
-    top: 4px;
-    background-color: #fff;
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-    transition: .6s;
-  }
-  .Pricing-monthly-light{
-    position: absolute;
-    background-color: #fff;
-    left: 32px;
-    top: 4px;
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
-    transition: .6s;
-  }
-  .Bouesso{
-    margin-left: 3rem;
-    color:#00ceee;
-    font-size: 25px;
-  }
-  .Bouesso:hover{
-    color: #926cad;
-  }
-  /* Mise en page des cartes de films */
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #01151f;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  padding: 0.9rem;
+}
+
+nav h1 {
+  color: #fff;
+  margin-left: 40px;
+  font-size: 25px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav span {
+  cursor: pointer;
+  margin-left: 40px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+nav span:hover {
+  color: #fff;
+  border-bottom: 2px solid #EE9B00;
+  padding-bottom: 5px;
+}
+
+span #HomeLight,
+#MoviesLight,
+#TrendingLight,
+#PricingLight {
+  color: #fff;
+}
+
+span #HomeLight:hover,
+#MoviesLight:hover,
+#TrendingLight:hover,
+#PricingLight:hover {
+  border-bottom: 2px solid #ff206e;
+}
+
+#navBarColor {
+  background-color: #38bdab;
+  transition: 0.6s;
+}
+
+.nav-options {
+  display: flex;
+  align-items: center;
+}
+
+#heading {
+  color: #ff206e;
+}
+
+#navBarColor span:hover {
+  border-bottom: 2px solid #ff206e;
+  padding-bottom: 5px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+#Color-switcher {
+  position: relative;
+  margin-right: 45px;
+  background-color: #413E44;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+#Color-switcher-mover {
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  background-color: #fff;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+
+#Color-switcher-moved {
+  position: absolute;
+  background-color: #fff;
+  left: 40px;
+  top: 4px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+
+.input-group input {
+  position: relative;
+  width: 323px;
+  height: 4vh;
+  border-radius: 16px;
+  border: none;
+  margin-right: 30px;
+}
+
+.input-group input[type="text"] {
+  padding-left: 17px;
+  font-size: 1rem;
+  color: black;
+}
+
+.input-group input::placeholder {
+  color: black;
+}
+
+.input-group input:focus {
+  outline: none;
+}
+
+#search {
+  position: absolute;
+  margin-left: 310px;
+}
+
+.Movies {
+  color: #fff;
+  margin-left: 30px;
+  font-size: 28px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mainBgColor {
+  background-color: #0c1e25;
+  width: 100%;
+}
+
+.secondaryBgColor {
+  background-color: #fff;
+  width: 100%;
+}
+
+.movies-container img {
+  width: 350px;
+  height: 550px;
+  margin: 25px 0px 4px 15px;
+  border-radius: 18px;
+}
+
+.mainColor {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+#Nothing {
+  display: none;
+}
+
+.secondaryColor {
+  color: #ff206e;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.movies-container h3,
+.movies-container img {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.movies-container img:hover {
+  transform: scale(1.05);
+}
+
+#container {
+  position: relative;
+}
+
+#hide {
+  display: none;
+}
+
+#smaller-Text {
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+#playIcon {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  visibility: visible;
+  z-index: 100;
+  cursor: pointer;
+}
+
+#Exit1 {
+  position: absolute;
+  margin-left: 475px;
+  margin-top: 67px;
+  z-index: 999;
+}
+
+#Nothing {
+  color: green;
+}
+
+#NoContainer {
+  opacity: 0.35;
+}
+
+.DarkTheme {
+  color: #fff;
+}
+
+.LightThemeClose {
+  color: #ff206e;
+}
+
+.player {
+  position: fixed;
+  top: 80px;
+  width: 800px;
+  height: 500px;
+}
+
+.Container {
+  display: none;
+  position: absolute;
+  z-index: 100;
+}
+
+#TrailerMovie-name-dark {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  top: -100px;
+  font-size: 2.5rem;
+  color: #EE9B00;
+}
+
+#TrailerMovie-name-light {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: absolute;
+  top: -100px;
+  font-size: 2.5rem;
+  color: #ff206e;
+}
+
+.backgroun-Color-Main {
+  width: 100vw;
+  height: 91vh;
+  background-color: #0c1e25;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backgroun-Color-secondary {
+  width: 100vw;
+  height: 91vh;
+  background-color: #fff;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pricing-container {
+  display: flex;
+  color: #fff;
+}
+
+.Pricing-option1,
+.Pricing-option2,
+.Pricing-option3 {
+  width: 30vw;
+  height: 63vh;
+  background-color: #000d13;
+  margin-right: 20px;
+  border-radius: 16px;
+}
+
+.light-Theme1,
+.light-Theme2,
+.light-Theme3 {
+  width: 30vw;
+  height: 63vh;
+  background-color: #29534e;
+  margin-right: 20px;
+  border-radius: 16px;
+}
+
+.Pricing-option1 h3,
+.Pricing-option2 h3,
+.Pricing-option3 h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.3rem;
+  color: #EE9B00;
+}
+
+.Price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.light-Theme1 h3,
+.light-Theme2 h3,
+.light-Theme3 h3 {
+  font-size: 2.3rem;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.Pricing-option1 h2,
+.Pricing-option2 h2,
+.Pricing-option3 h2 {
+  font-size: 3rem;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.light-Theme1 h2,
+.light-Theme2 h2,
+.light-Theme3 h2 {
+  color: #ff206e;
+  font-size: 3rem;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.Pricing-option1 span,
+.Pricing-option2 span,
+.Pricing-option3 span {
+  display: flex;
+  font-size: 1.3rem;
+  margin-left: 80px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+#MonthlyYearly {
+  font-size: 1.4rem;
+}
+
+.light-Theme1 span,
+.light-Theme2 span,
+.light-Theme3 span {
+  display: flex;
+  font-size: 1.3rem;
+  margin-left: 80px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  color: #fff;
+}
+
+#checkmark {
+  margin-right: 9px;
+}
+
+button {
+  width: 400px;
+  height: 6vh;
+  margin-left: 80px;
+  border: none;
+  border-radius: 7px;
+  background-color: #659664;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #588157;
+  transition: 0.4s;
+}
+
+#button1 {
+  margin-top: 98px;
+}
+
+#button2 {
+  margin-top: 55px;
+}
+
+#button3 {
+  margin-top: 12px;
+}
+
+#darktheme {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Pricing-yearly-darktheme {
+  position: relative;
+  margin-left: 250px;
+  width: 70px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #413E44;
+  margin-right: 10px;
+}
+
+.Pricing-monthly-darktheme {
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  background-color: #fff;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+
+.Pricing-monthly-light {
+  position: absolute;
+  background-color: #fff;
+  left: 32px;
+  top: 4px;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  transition: 0.6s;
+}
+
+.Bouesso {
+  margin-left: 3rem;
+  color: #00ceee;
+  font-size: 25px;
+}
+
+.Bouesso:hover {
+  color: #926cad;
+}
+
+/* Mise en page des cartes de films */
 .movies-container {
   display: flex;
   flex-wrap: wrap;
@@ -401,7 +477,7 @@ nav {
 
 /* Style des cartes individuelles */
 .movie-card {
-  flex: 1 1 200px; /* Ajustez la base size selon vos besoins */
+  flex: 1 1 200px;
   margin: 10px;
   max-width: calc(100% - 20px);
   cursor: pointer;
@@ -412,7 +488,7 @@ nav {
   position: absolute;
   bottom: 5;
   width: 70%;
-  background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   text-align: center;
   margin: 5px;
@@ -425,10 +501,9 @@ nav {
 .movie-image {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Garde le ratio d'aspect */
+  object-fit: cover;
 }
 
-/* Style pour le modal de la vidéo */
 .video-modal {
   position: fixed;
   top: 10%;
@@ -442,6 +517,125 @@ nav {
 }
 
 .video-modal.active {
-  display: block; /* Affiche le modal quand il est actif */
-}  
+  display: block;
+}
 
+/* Media queries pour rendre le site adaptatif */
+@media (max-width: 1368px) {
+  nav h1 {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 25px;
+  }
+
+  nav span {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+  }
+
+  .Bouesso {
+    margin-left: 1rem;
+    color: #00ceee;
+    font-size: 15px;
+  }
+
+  #Color-switcher {
+    position: relative;
+    margin-right: 20px;
+    background-color: #413E44;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+  }
+
+  .input-group input {
+    position: relative;
+    width: 153px;
+    height: 4vh;
+    border-radius: 16px;
+    border: none;
+    margin-right: 40px;
+  }
+
+  #Color-switcher {
+    position: relative;
+    margin-right: 70px;
+    background-color: #413E44;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 742px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav h1 {
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  nav span {
+    margin-left: 5px;
+    font-size: 0.45rem;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+
+  .nav-options {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-options.open {
+    display: flex;
+  }
+
+  .ytp-cued-thumbnail-overlay-image {
+    width: 50%;
+    height: 50%;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-group input {
+    width: 80%;
+    margin-right: 0;
+  }
+
+  .movie-card {
+    flex: 1 1 100%;
+    margin: 5px 0;
+  }
+
+  .movie-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-modal {
+    width: 90%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

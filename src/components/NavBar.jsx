@@ -1,38 +1,45 @@
 import React, { Fragment, useState } from 'react';
 import { HiSearch } from "react-icons/hi";
-import { Routes, Route, NavLink, Link} from 'react-router-dom';
+import { Routes, Route, NavLink } from 'react-router-dom';
 import Movies from './Movies';
 import TopRated from './TopRated';
 import TvShows from './TvShows';
 import Popular from './Popular';
-import "../Styles/NavBarStyle.css"
-
+import "../Styles/NavBarStyle.css";
 
 export const Container = React.createContext();
 
 function NavBar() {
     const [toggle, setToggle] = useState(true);
-    const [inputValue, setInputValue] = useState('')
-    console.log(toggle)
-        return (
-        <Container.Provider value={{toggle, inputValue}}>
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [inputValue, setInputValue] = useState('');
+
+    return (
+        <Container.Provider value={{ toggle, inputValue }}>
             <Fragment>
                 <nav className={toggle ? '' : 'navBarColor'}>
-                    <div className='nav-options'>
-                    <Link id={toggle ? '' : 'heading'} className='Movies' to='/'>MOVIES</Link>                        
-                        <NavLink to="" style={({ isActive }) => { return { color: isActive ? '#fff' : '#EE9800' } }}>
+                    <div className='nav-header'>
+                        <h1 id={toggle ? '' : 'heading'}>MOVIES</h1>
+                        <div className='hamburger-menu' onClick={() => setMenuOpen(!menuOpen)}>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div className={`nav-options ${menuOpen ? 'open' : ''}`}>
+                        <NavLink to="" style={({ isActive }) => ({ color: isActive ? '#fff' : '#EE9800' })}>
                             <span id={toggle ? 'Movies' : 'MoviesLight'}>Now Playing</span>
                         </NavLink>
-                        <NavLink to="/Top Rated" style={({ isActive }) => { return { color: isActive ? '#fff' : '#EE9800' } }}>
+                        <NavLink to="/Top Rated" style={({ isActive }) => ({ color: isActive ? '#fff' : '#EE9800' })}>
                             <span id={toggle ? 'Movies' : 'MoviesLight'}>Top Rated</span>
                         </NavLink>
-                        <NavLink to="/Tv Shows" style={({ isActive }) => { return { color: isActive ? '#fff' : '#EE9800' } }}>
+                        <NavLink to="/Tv Shows" style={({ isActive }) => ({ color: isActive ? '#fff' : '#EE9800' })}>
                             <span id={toggle ? 'Movies' : 'MoviesLight'}>Tv Shows</span>
                         </NavLink>
-                        <NavLink to="/Popular" style={({ isActive }) => { return { color: isActive ? '#fff' : '#EE9800' } }}>
+                        <NavLink to="/Popular" style={({ isActive }) => ({ color: isActive ? '#fff' : '#EE9800' })}>
                             <span id={toggle ? 'Movies' : 'MoviesLight'}>Popular</span>
-                        </NavLink>                            
-                        <a href="#!" className='Bouesso' rel="noopener noreferrer" >Bouesso-Service</a>                                                                                
+                        </NavLink>
+                        <a href="https://bouesso-service.netlify.app/" className='Bouesso' rel="noopener noreferrer">Bouesso-Service</a>
                     </div>
                     <div className='input-group'>
                         <input type='text' placeholder='Search Whatever You Want' onChange={(e) => setInputValue(e.target.value)} />
