@@ -35,4 +35,3 @@ function TrailerMovies({ movieTitle, toggle }) { // Renamed MoviesTitle to movie
 
 export default TrailerMovies;
 
-//hg
